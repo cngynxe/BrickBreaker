@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dolphin Game </title>
+        <link href="dolphin.css" rel="stylesheet">
+  </head>
+  <body>
+    <img src="brick.jpg" alt="Title Characters" width="500" height="90">
+    <p> Press the spacebar to begin! For best results, please enable desired special features before starting. </p>
+    <div>
+    <button id="changebutton1" onclick="SmallerBricks()"> Smaller Bricks </button>
+    <button id="changebutton2" onclick="ReverseMode()"> Reverse Mode </button>
+    <button id="changebutton3" onclick="DoubleSpeed()"> Double Speed </button>
+    <button id="changebutton4" onclick="MoreRows()"> More Rows </button>
+    <button id="changebutton5" onclick="Default()"> Default </button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="650"></canvas>
+    <script src = "dolphin.js"></script>
+    <script src = "jquerylibrary.js"></script>
+    <p id="instructionblock"> Use the left and right arrow keys to move your paddle. Break all the bricks to win! </p>
+  </body>
+</html>
